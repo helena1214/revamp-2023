@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!--Bootstrap 5.1-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+ 
+     <!--FancyApp Plugin-->
+     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+
+     <!--Google font-->
+     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+ 
+     <!--Alpine.js-->
+     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Helena | About Me</title>
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="./css/main_style.css">
+</head>
+<body>
+    <div class="wrap">
+    <div class="container-left d-flex flex-column justify-content-between">
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid ps-sm-0 ms-sm-n1">
+  
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 w-100">
+  
+              <!--Mobile Project list-->
+              <li class="nav-item d-block d-sm-none mx-auto">
+                <ul class="project-list text-center list-unstyled">
+                  <li><span class="nav-link text-light">PROJECT</span></li>
+                  <li><a class="nav-link fw-lighter"  href="#">The COOKbook</a></li>
+                  <li><a class="nav-link fw-lighter"  href="#">GreenFingers</a></li>
+                  <li><a class="nav-link fw-lighter"  href="#">FamiDINE</a></li>
+                </ul>
+              </li>
+              
+              <!--Desktop Projects dropdown-->
+              <li class="nav-item dropdown d-none d-sm-block">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  PROJECTS
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                  <li><h6 class="dropdown-header">UX studies</h6></li>
+                  <li><a class="dropdown-item" href="#">The COOKbook</a></li>
+                  <li><a class="dropdown-item" href="#">GreenFingers</a></li>
+                  <li><a class="dropdown-item" href="#">FamiDINE</a></li>
+                </ul>
+              </li>
+  
+              <!--Desktop About Me-->
+              <li class="nav-item mx-auto ms-sm-0">
+                <a class="nav-link text-center text-sm-left text-light"  href="./about-me.html">ABOUT ME</a>
+              </li>
+  
+              <!--Tablet app-container-->
+              <li class="nav-item ms-auto me-auto me-sm-0 d-block d-md-none my-auto">
+                <ul class="app-container list-unstyled d-flex">
+                  <li><a href="https://github.com/helena1214" title="My Github" class="link-light"><i class="bi bi-github mx-2"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/wongtszkwanhelena/" title="My Linkedin" class="link-light"><i class="bi bi-linkedin mx-2"></i></a></li>
+                  <li><a href="mailto:tszkwan1214@gmail.com" title="Email Me" class="link-light"><i class="bi bi-envelope-fill mx-2"></i></a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </div>
+  
+        </div>
+      </nav>
+  
+      <!--Hero title-->
+      <div class="hero-box mt-5 mt-sm-0 mb-2 mb-sm-5 mb-md-0">
+        <a href="./index.html" class="link-unstyled">
+          <h1>Helena WONG</h1>
+          <hr class="w-100 mt-0 mb-2">
+          <h4>WEB DESIGNER</h4>           
+        </a>
+      </div>
+  
+      <!--Destop app-container-->
+      <div class="d-flex d-none d-md-block">
+        <ul class="app-container list-unstyled d-flex">
+          <li><a href="https://github.com/helena1214" title="My Github" class="link-light"><i class="bi bi-github mx-2"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/wongtszkwanhelena/" title="My Linkedin" class="link-light"><i class="bi bi-linkedin mx-2"></i></a></li>
+          <li><a href="mailto:tszkwan1214@gmail.com" title="Email Me" class="link-light"><i class="bi bi-envelope-fill mx-2"></i></a></li>
+        </ul>
+      </div>
+  
+    </div>
+  
+  <div class="container-right container me-md-0">
+    <div class="aboutme-wrap d-flex flex-column justify-content-between h-100">
+        <div class="aboutme-textbox px-md-5 mx-auto">
+            <h2>About me.</h2>
+            <hr class="w-100 mt-0 mb-2">
+            <p>From a laboratory technician to a self-taught UI/UX designer, I am passionate to learn the latest design trends and willing to design the best product, which is the simplest one.</p>
+            <p>I enjoy cooking & making 3D interior design in free time. Now Living in Hong Kong with my 2 cats, Dim & Kit.</p>
+        </div>
+
+        <div class="aboutme-textbox px-md-5 mx-auto">
+            <div class="d-flex justify-content-between align-items-end">
+                <h2>Skills</h2>
+                <h5 class="fw-bold letter-space-sm float-right">RESUME</h5>                
+            </div>
+            <hr class="w-100 mt-0 mb-2">
+
+            <!--Option 2 Grid-->
+                <div class="row py-2">
+                    <h6 class="letter-space-sm col-12 col-lg-4 col-xxl-3">LANGUAGE</h6>
+                    <div class="fw-light col-12 col-lg-8 col-xxl-9 mb-4">English · Chinese (Cantonese & Mandrian)</div>
+
+                    <h6 class="letter-space-sm col-12 col-lg-4 col-xxl-3">UI DESIGN</h6>
+                    <div class="fw-light col-12 col-lg-8 col-xxl-9 mb-4">Figma · Abode XD · Zeplin · ProtoPie </div>
+
+                    <h6 class="letter-space-sm col-12 col-lg-4 col-xxl-3">UX RESEARCH</h6>
+                    <div class="fw-light col-12 col-lg-8 col-xxl-9 mb-4">Wireframing · Prototyping · Performing Usability Studies</div>
+
+                    <h6 class="letter-space-sm col-12 col-lg-4 col-xxl-3">FRONTEND</h6>
+                    <div class="fw-light col-12 col-lg-8 col-xxl-9 mb-4">HTML · CSS · Bootstrap · JavaScript · Alpinejs</div>
+                </div>
+            
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>
