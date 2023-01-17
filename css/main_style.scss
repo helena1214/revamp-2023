@@ -36,8 +36,15 @@ p{font-weight: 300;}
 
         padding-top: 12vh;
         padding-bottom: 12vh;
-        padding-right: 5.5vw;
+        padding-left: 5.5vw;
+        padding-right: unset;
     }
+
+    //Extreme Desktop
+    // @media(min-width: 1400px){
+    //     width: calc(50% - 8vw);
+    //     padding-left: 8vw;
+    // }
 
     //Mobile
     @media(max-width: 576px){
@@ -66,9 +73,9 @@ p{font-weight: 300;}
         margin-top: 12vh;
     }
     //Extreme Desktop
-    // @media(min-width: 1400px){
-    //     width: calc(100% - 700px);
-    // }
+    //  @media(min-width: 1400px){
+    //     margin-right: 8vw;
+    //  }
 }
 
 .hero-box{

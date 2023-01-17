@@ -37,7 +37,8 @@ p {
     height: 100vh;
     padding-top: 12vh;
     padding-bottom: 12vh;
-    padding-right: 5.5vw;
+    padding-left: 5.5vw;
+    padding-right: unset;
   }
 }
 @media (max-width: 576px) {
