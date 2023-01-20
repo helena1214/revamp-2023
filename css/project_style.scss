@@ -1,4 +1,49 @@
+//Project theme color
+:root{
+    --primary-color:#F3B424;
+}
+.primary-theme{
+    color: var(--primary-color);
+}
+
 //Main style overwrite
 .container-left{
-    background: #F3B424;
+    background: var(--primary-color);
+    min-height: 500px;
+    //Desktop
+    @media(min-width: 768px){
+        height: 100vh;
+        width:40%; 
+    }
+    //Mobile
+    @media(max-width: 576px){
+        min-height: 300px;
+    }
+        
+}
+
+
+.img-project-hero{
+    max-height: calc(500px - 60px - 64px);
+    object-fit: cover;
+    object-position: top;
+
+    //Desktop
+    @media(min-width: 768px){
+        min-height: 600px;
+        max-height: calc(100% - 64px);
+        object-position: left;
+    }
+    //Mobile
+    @media(max-width: 576px){
+        max-height: calc(300px - 38px - 16px - 24px);
+    }
+}
+
+.product-CTA-next{
+   position: fixed;
+   bottom: 12vh;
+   right: 4vw;
+   transition-duration: 500ms;
+   &:hover{transform: scale(0.9);}
 }

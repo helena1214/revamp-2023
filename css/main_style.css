@@ -27,6 +27,7 @@ p {
   padding-right: 80px;
   width: 100%;
   height: 360px;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .container-left {
@@ -43,7 +44,9 @@ p {
 }
 @media (max-width: 576px) {
   .container-left {
-    position: static;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     width: 100%;
     max-width: 576px;
     height: -webkit-max-content;
@@ -57,7 +60,7 @@ p {
 
 .container-right {
   width: 100%;
-  margin-top: 80px;
+  padding-top: 80px;
 }
 @media (max-width: 576px) {
   .container-right {
@@ -68,7 +71,9 @@ p {
 @media (min-width: 768px) {
   .container-right {
     width: 50%;
-    margin-top: 12vh;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+    height: 100vh;
   }
 }
 
@@ -93,6 +98,7 @@ p {
 
 .hover-wrap {
   position: relative;
+  transition-duration: 500ms;
 }
 .hover-wrap .hover-textbox {
   display: none;
@@ -106,11 +112,11 @@ p {
 }
 .hover-wrap:hover .hover-textbox {
   display: block;
-  transition: 0.5s ease;
+  transition: 0.5s;
 }
 .hover-wrap:hover img {
   filter: brightness(0.3);
-  transition: 0.5s ease;
+  transition-duration: 500ms;
 }
 
 @media (min-width: 768px) {
@@ -125,4 +131,14 @@ p {
   .aboutme-wrap .aboutme-textbox ~ .aboutme-textbox {
     margin-top: 12vh;
   }
+}
+
+i.rounded-circle {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 50% !important;
 }/*# sourceMappingURL=main_style.css.map */
