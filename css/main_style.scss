@@ -15,49 +15,62 @@ p{font-weight: 300;}
 //Components
 .container-left{
     background: center / cover no-repeat url(../assets/background.jpg);
-
-    position: static;
-
-    padding-top: 60px;
-    padding-left: 80px;
-    padding-right: 80px;
-
-    width: 100%;
+    position: static;    
     height: 360px;
-
+    width: 100%;
+     
     //Desktop
     @media(min-width: 768px){
         position: fixed;
         top: 0;
         left: 0;
 
-        width:50%; 
         height: 100vh;
-
-        padding-top: 12vh;
-        padding-bottom: 12vh;
-        padding-left: 5.5vw;
-        padding-right: unset;
+        width:50%;
     }
-
-    //Extreme Desktop
-    // @media(min-width: 1400px){
-    //     width: calc(50% - 8vw);
-    //     padding-left: 8vw;
-    // }
-
-    //Mobile
+     //Mobile
     @media(max-width: 576px){
         position: static;
 
         width:100%; 
         max-width: 576px;
-        height: max-content;
 
-        padding-top: 24px;
-        padding-right: unset;
-        padding-left: unset;
+        height: max-content;
+        min-height: 360px;
     }
+   
+    .container-left-wrapper{
+        padding-top: 60px;
+        margin-left: 80px;
+        margin-right: 80px;
+
+        height: 100%;
+
+        //Desktop
+        @media(min-width: 768px){
+            padding-top: 12vh;
+            padding-bottom: 12vh;
+            margin-left: 5.5vw;
+            margin-right: unset;
+        }
+
+        //Extreme Desktop
+        // @media(min-width: 1400px){
+        //     width: calc(50% - 8vw);
+        //     margin-left: 8vw;
+        // }
+
+        //Mobile
+        @media(max-width: 576px){
+            padding-top: 24px;
+            margin-right: unset;
+            margin-left: unset;
+        }
+    }
+
+
+
+
   }
 
 .container-right{
