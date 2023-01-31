@@ -5,6 +5,10 @@
 .primary-theme{
     color: var(--primary-color);
 }
+.primary-bg-theme{
+    background-color: var(--primary-color);
+    color: black;
+}
 
 //Main style overwrite
 .container-left{

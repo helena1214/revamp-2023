@@ -6,6 +6,11 @@
   color: var(--primary-color);
 }
 
+.primary-bg-theme {
+  background-color: var(--primary-color);
+  color: black;
+}
+
 .container-left {
   background: var(--primary-color);
   min-height: 500px;
