@@ -12,13 +12,13 @@
 }
 
 .container-left {
-  background: var(--primary-color);
+  background: white;
   min-height: 500px;
 }
 @media (min-width: 768px) {
   .container-left {
     height: 100vh;
-    width: 40%;
+    width: 50%;
   }
 }
 @media (max-width: 576px) {
@@ -27,19 +27,24 @@
   }
 }
 
+.container-right {
+  background: var(--primary-color);
+  max-width: unset;
+}
+
+.navbar-brand {
+  font-family: "Abril Fatface", cursive;
+}
+
 .img-project-hero {
   max-height: 376px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
 }
 @media (min-width: 768px) {
   .img-project-hero {
     min-height: 600px;
     max-height: calc(100% - 64px);
-    -o-object-position: left;
-       object-position: left;
   }
 }
 @media (max-width: 576px) {
@@ -49,9 +54,8 @@
 }
 
 .product-CTA-next {
-  position: fixed;
-  bottom: 12vh;
-  right: 4vw;
+  position: absolute;
+  right: 25%;
   transition-duration: 500ms;
 }
 .product-CTA-next:hover {

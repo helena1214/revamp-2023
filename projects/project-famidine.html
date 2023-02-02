@@ -16,7 +16,7 @@
 
      <!--Google font-->
      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
  
      <!--Alpine.js-->
      <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -29,10 +29,10 @@
 <body>
     <div class="wrap">
     <div class="container-left d-flex flex-column justify-content-between">
-      <nav class="navbar navbar-expand-sm navbar-dark">
+      <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container-fluid ps-sm-0 ms-sm-n1">
   
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <a class="navbar-brand" href="#">Helena.</a>
           <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -42,7 +42,7 @@
               <!--Mobile Project list-->
               <li class="nav-item d-block d-sm-none mx-auto">
                 <ul class="project-list text-center list-unstyled">
-                  <li><span class="nav-link text-light">PROJECT</span></li>
+                  <li><span class="nav-link">PROJECT</span></li>
                   <li><a class="nav-link fw-lighter"  href="#">The COOKbook</a></li>
                   <li><a class="nav-link fw-lighter"  href="#">GreenFingers</a></li>
                   <li><a class="nav-link fw-lighter"  href="#">FamiDINE</a></li>
@@ -51,7 +51,7 @@
               
               <!--Desktop Projects dropdown-->
               <li class="nav-item dropdown d-none d-sm-block">
-                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                   PROJECTS
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
@@ -64,7 +64,7 @@
   
               <!--Desktop About Me-->
               <li class="nav-item mx-auto ms-sm-0">
-                <a class="nav-link text-center text-sm-left text-light"  href="./about-me.html">ABOUT ME</a>
+                <a class="nav-link text-center text-sm-left"  href="./about-me.html">ABOUT ME</a>
               </li>
   
               <!--Tablet app-container-->
@@ -81,9 +81,21 @@
   
         </div>
       </nav>
-  
-      <!--Hero title-->
-      <img src="../assets/projects/famidine/famidine_hero.png" class="img-project-hero">
+
+      <!--Product Hero title-->
+      <div class="project-hero-box text-center text-md-start mb-2 mb-sm-5 mb-md-0">
+        <h4 class="letter-space-sm">CASE STUDY</h4> 
+        <h1 class="display-1 fw-bold primary-theme">FamiDINE</h1>
+        <p class="lead text-secondary">A case study in designing a menu & ordering app for a family resturant.</p>
+      </div>
+      <div class="btn-toolbar mt-md-3 d-flex flex-column flex-md-row w-75 mx-auto ms-md-0">
+        <a type="button" class="btn btn-outline-warning my-2" href="#">TRY PROTOTYPE</a>
+        <a type="button" class="btn btn-warning d-md-none my-2" href="#">PROJECT OVERVIEW</a>
+      </div>
+
+
+
+      <!--MOBILE Product CTA-->
   
       <!--Destop app-container-->
       <div class="d-none d-md-flex">
@@ -97,25 +109,16 @@
     </div>
   
   <div class="container-right container me-md-0 d-flex flex-column justify-content-center">
-        <!--Product Hero title-->
-        <div class="project-hero-box text-center text-md-start mb-2 mb-sm-5 mb-md-0">
-          <h4 class="letter-space-sm">CASE STUDY</h4> 
-          <h1 class="display-1 fw-bold primary-theme">FamiDINE</h1>
-          <p class="lead text-secondary">A case study in designing a menu & ordering app for a family resturant.</p>
-        </div>
-        <div class="btn-toolbar mt-md-3 d-flex flex-column flex-md-row w-75 mx-auto ms-md-0">
-          <a type="button" class="btn btn-outline-warning my-2" href="#">TRY PROTOTYPE</a>
-          <a type="button" class="btn btn-warning d-md-none my-2" href="#">PROJECT OVERVIEW</a>
-        </div>
 
-        <!--DESKTOP Product CTA-->
-        <div class="product-CTA-next d-none d-md-block">
-          <a class="link-unstyled" type="button">
-            <h4 class="text-secondary fw-light letter-space-sm">USER RESEARCH<i class="bi bi-play-fill rounded-circle bg-warning text-light mx-2"></i></h4>
-          </a>          
-        </div>
+    <!--Hero title-->
+    <img src="../assets/projects/famidine/famidine_hero.png" class="img-project-hero">
 
-        <!--MOBILE Product CTA-->
+    <!--DESKTOP Product CTA-->
+    <div class="product-CTA-next d-none d-md-block">
+      <a class="link-unstyled" type="button">
+        <i class="bi bi-play-fill rounded-circle text-warning bg-light"></i>
+      </a>          
+    </div>
   </div>
 
 </body>
